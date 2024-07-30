@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import { restaurantList } from "../mockData";
 
@@ -19,12 +19,6 @@ const Body = () => {
         setFilterData(filteredData);
     }
 
-    useEffect(()=>{
-        const apiData = fetch("https://www.swiggy.com/dapi/restaurants/list/update");
-        console.log("apiData",apiData);
-        
-
-    },[])
 
 
 
